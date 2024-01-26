@@ -1250,6 +1250,7 @@
       <apn mcc="311" mnc="480" carrier="Verizon Internet" apn="VZWINTERNET" mmsc="http://mms.vtext.com/servlets/mms" type="default,mms,dun,stdhipri" protocol="IPV4V6" bearer="9" roaming_protocol="IPV4V6" carrier_enabled="TRUE"></apn>
       <apn mcc="311" mnc="480" carrier="Verizon Internet" apn="VZWINTERNET" mmsc="http://mms.vtext.com/servlets/mms" type="default,mms,dun,stdhipri,supl" protocol="IPV4V6" bearer="13" roaming_protocol="IPV4V6" carrier_enabled="TRUE"></apn>
       <apn mcc="311" mnc="480" carrier="Verizon Internet" apn="VZWINTERNET" mmsc="http://mms.vtext.com/servlets/mms" type="default,mms,dun,stdhipri,supl" protocol="IPV4V6" bearer="14" roaming_protocol="IPV4V6" carrier_enabled="TRUE"></apn>
+      <apn mcc="311" mnc="480" carrier="Tracfone" apn="VZWINTERNET" mmsc="0" type="default,dun,supl" protocol="IPV4V6" bearer="0" roaming_protocol="IPV4" carrier_enabled="TRUE"></apn>
       <apn mcc="311" mnc="490" carrier="Sprint" apn="cinet.spcs" mmsc="http://mmsc.vmobl.com:8088" mmsproxy="68.28.31.2" mmsport="80" type="default,mms" user="none" password="none" bearer="1" server="*"></apn>
       <apn mcc="311" mnc="490" carrier="Sprint" apn="cinet.spcs" mmsc="http://mmsc.vmobl.com:8088" mmsproxy="68.28.31.2" mmsport="80" type="default,mms" user="none" password="none" bearer="10" server="*"></apn>
       <apn mcc="311" mnc="490" carrier="Sprint" apn="cinet.spcs" mmsc="http://mmsc.vmobl.com:8088" mmsproxy="68.28.31.2" mmsport="80" type="default,mms" user="none" password="none" bearer="11" server="*"></apn>
