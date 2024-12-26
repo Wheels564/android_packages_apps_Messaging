@@ -17,7 +17,6 @@
 
 package com.android.messaging.ui.conversation;
 
-import android.Manifest;
 import android.app.Activity;
 import android.app.DownloadManager;
 import android.content.BroadcastReceiver;
@@ -306,20 +305,15 @@ public class ConversationFragment extends Fragment implements ConversationDataLi
             final String messageId = data.getMessageId();
             int itemId = menuItem.getItemId();
             if (itemId == R.id.save_attachment) {
-                if (OsUtil.hasStoragePermission()) {
-                    final SaveAttachmentTask saveAttachmentTask = new SaveAttachmentTask(
-                            getActivity());
-                    for (final MessagePartData part : data.getAttachments()) {
-                        saveAttachmentTask.addAttachmentToSave(part.getContentUri(),
-                                part.getContentType());
-                    }
-                    if (saveAttachmentTask.getAttachmentCount() > 0) {
-                        saveAttachmentTask.executeOnThreadPool();
-                        mHost.dismissActionMode();
-                    }
-                } else {
-                    getActivity().requestPermissions(
-                            new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 0);
+                final SaveAttachmentTask saveAttachmentTask = new SaveAttachmentTask(
+                        getActivity());
+                for (final MessagePartData part : data.getAttachments()) {
+                    saveAttachmentTask.addAttachmentToSave(part.getContentUri(),
+                            part.getContentType());
+                }
+                if (saveAttachmentTask.getAttachmentCount() > 0) {
+                    saveAttachmentTask.executeOnThreadPool();
+                    mHost.dismissActionMode();
                 }
                 return true;
             } else if (itemId == R.id.action_delete_message) {

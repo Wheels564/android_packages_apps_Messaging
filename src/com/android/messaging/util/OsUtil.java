@@ -119,13 +119,6 @@ public class OsUtil {
         return OsUtil.hasPermission(Manifest.permission.ACCESS_FINE_LOCATION);
     }
 
-
-    public static boolean hasStoragePermission() {
-        // Note that READ_EXTERNAL_STORAGE and WRITE_EXTERNAL_STORAGE are granted or denied
-        // together.
-        return OsUtil.hasPermission(Manifest.permission.READ_EXTERNAL_STORAGE);
-    }
-
     public static boolean hasRecordAudioPermission() {
         return OsUtil.hasPermission(Manifest.permission.RECORD_AUDIO);
     }
