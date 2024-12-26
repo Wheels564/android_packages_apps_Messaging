@@ -191,6 +191,7 @@
     </style>
 
     <style name="PagerTabHeader">
+        <item name="android:forceDarkAllowed">false</item>
         <item name="android:textColor">@color/tab_text_color</item>
         <item name="android:textSize">@dimen/pager_tab_header_text_size</item>
         <item name="android:background">@null</item>
