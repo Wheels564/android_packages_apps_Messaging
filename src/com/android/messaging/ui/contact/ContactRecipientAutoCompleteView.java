@@ -18,7 +18,9 @@ package com.android.messaging.ui.contact;
 
 import android.content.Context;
 import android.database.Cursor;
+import android.graphics.Color;
 import android.graphics.Rect;
+import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.text.Editable;
 import android.text.TextPaint;
@@ -30,7 +32,9 @@ import android.view.KeyEvent;
 import android.view.inputmethod.EditorInfo;
 import android.widget.TextView;
 
+import androidx.core.content.ContextCompat;
 import androidx.core.content.res.ResourcesCompat;
+import androidx.core.graphics.drawable.DrawableCompat;
 
 import com.android.ex.chips.RecipientEditTextView;
 import com.android.ex.chips.RecipientEntry;
@@ -114,9 +118,13 @@ public class ContactRecipientAutoCompleteView extends RecipientEditTextView {
         addTextChangedListener(new ContactChipsWatcher());
         setOnFocusListShrinkRecipients(false);
 
-        setBackground(ResourcesCompat.getDrawable(context.getResources(),
+        Drawable drawable = ResourcesCompat.getDrawable(context.getResources(),
                 androidx.appcompat.R.drawable.abc_textfield_search_default_mtrl_alpha,
-                context.getTheme()));
+                context.getTheme());
+        int drawableColor = ContextCompat.getColor(context, android.R.color.white);
+        DrawableCompat.setTint(drawable.mutate(), drawableColor);
+
+        setBackground(drawable);
     }
 
     public void setContactChipsListener(final ContactChipsChangeListener listener) {

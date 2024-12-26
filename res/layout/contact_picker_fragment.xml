@@ -36,6 +36,7 @@
             android:maxHeight="@dimen/compose_message_chips_view_max_height">
 
             <com.android.messaging.ui.contact.ContactRecipientAutoCompleteView
+                android:forceDarkAllowed="false"
                 android:id="@+id/recipient_text_view"
                 style="@style/RecipientEditTextView"
                 android:layout_width="match_parent"
