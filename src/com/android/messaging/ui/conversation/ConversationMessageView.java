@@ -28,7 +28,6 @@ import android.text.TextUtils;
 import android.text.format.DateUtils;
 import android.text.format.Formatter;
 import android.text.style.URLSpan;
-import android.text.util.Linkify;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.view.Gravity;
@@ -67,6 +66,7 @@ import com.android.messaging.util.Assert;
 import com.android.messaging.util.AvatarUriUtil;
 import com.android.messaging.util.ContentType;
 import com.android.messaging.util.ImageUtils;
+import com.android.messaging.util.LinkifyHelper;
 import com.android.messaging.util.OsUtil;
 import com.android.messaging.util.PhoneUtils;
 import com.android.messaging.util.UiUtils;
@@ -642,7 +642,7 @@ public class ConversationMessageView extends FrameLayout implements View.OnClick
             mMessageTextView.setText(text);
             // Linkify phone numbers, web urls, emails, and map addresses to allow users to
             // click on them and take the default intent.
-            mMessageTextHasLinks = Linkify.addLinks(mMessageTextView, Linkify.ALL);
+            mMessageTextHasLinks = LinkifyHelper.addLinks(mMessageTextView);
             mMessageTextView.setVisibility(View.VISIBLE);
         } else {
             mMessageTextView.setVisibility(View.GONE);
