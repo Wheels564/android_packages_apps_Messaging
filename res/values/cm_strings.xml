@@ -21,4 +21,7 @@
 
     <!-- Notification channel -->
     <string name="notification_channel_messages_title">Messages</string>
+
+    <!-- Start new chat button on the main screen -->
+    <string name="start_chat">Start chat</string>
 </resources>
