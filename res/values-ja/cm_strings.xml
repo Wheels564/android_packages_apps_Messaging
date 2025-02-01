@@ -18,4 +18,5 @@
     <string name="swipe_to_delete_conversation_pref_title">スワイプして削除</string>
     <string name="swipe_to_delete_conversation_pref_summary">右にスワイプしてスレッドを削除する</string>
     <string name="notification_channel_messages_title">メッセージ</string>
+    <string name="start_chat">チャットを開始</string>
 </resources>

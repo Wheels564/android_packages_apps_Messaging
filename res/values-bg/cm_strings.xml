@@ -18,4 +18,5 @@
     <string name="swipe_to_delete_conversation_pref_title">Бързо изтриване</string>
     <string name="swipe_to_delete_conversation_pref_summary">Плъзнете от ляво надясно за да изтриете кореспонденцията</string>
     <string name="notification_channel_messages_title">Съобщения</string>
+    <string name="start_chat">Започване на чат</string>
 </resources>

@@ -18,4 +18,5 @@
     <string name="swipe_to_delete_conversation_pref_title">Vegen om te verwijderen</string>
     <string name="swipe_to_delete_conversation_pref_summary">Naar rechts vegen om een gesprek te verwijderen</string>
     <string name="notification_channel_messages_title">Berichten</string>
+    <string name="start_chat">Begin chat</string>
 </resources>

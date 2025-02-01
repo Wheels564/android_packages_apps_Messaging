@@ -18,4 +18,5 @@
     <string name="swipe_to_delete_conversation_pref_title">Deslize para apagar</string>
     <string name="swipe_to_delete_conversation_pref_summary">Deslize para a direita para apagar uma conversa</string>
     <string name="notification_channel_messages_title">Mensagens</string>
+    <string name="start_chat">Iniciar chat</string>
 </resources>

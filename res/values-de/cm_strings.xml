@@ -18,4 +18,5 @@
     <string name="swipe_to_delete_conversation_pref_title">Zum Löschen wischen</string>
     <string name="swipe_to_delete_conversation_pref_summary">Nach rechts wischen, um eine Konversation zu löschen</string>
     <string name="notification_channel_messages_title">Nachrichten</string>
+    <string name="start_chat">Chat starten</string>
 </resources>

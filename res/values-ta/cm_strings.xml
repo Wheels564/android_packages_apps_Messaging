@@ -18,4 +18,5 @@
     <string name="swipe_to_delete_conversation_pref_title">நீக்குவதற்கு தேய்க்கவும்</string>
     <string name="swipe_to_delete_conversation_pref_summary">ஒரு உரையாடல் நீக்குவதற்கு வலது பக்கமாக தேய்க்கவும்</string>
     <string name="notification_channel_messages_title">செய்திகள்</string>
+    <string name="start_chat">பேசத் தொடங்குக</string>
 </resources>
